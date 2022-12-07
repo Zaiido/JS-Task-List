@@ -195,7 +195,6 @@ The user should be able to see the list of tasks, add new ones, delete existing 
 
       let colorPickerNode = document.getElementById("colorPicker")
       colorPickerNode.addEventListener("change", function (event) {
-        let tasksList = document.getElementsByTagName("li")
         for (task of tasksList) {
           task.style.backgroundColor = event.target.value
         }
